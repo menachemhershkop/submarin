@@ -7,7 +7,12 @@ def in_bounds(size: int, x: int, y: int) -> bool:
         return False
     return True
 def count_remaining_ships(ships: list[list[int]], shots: list[list[bool]]) -> int:
-    pass
+    shot_count=0
+    for i,j in enumearte(ships):
+        for x,y in emumerate(j):
+            if shots[x][y]==ships[i][j]:
+                shot_count+=1
+    return shot_count
 def render_public(ships: list[list[int]], shots: list[list[bool]]) -> str:
     pass
 def render_reveal(ships: list[list[int]], shots: list[list[bool]]) -> str:
