@@ -1,1 +1,17 @@
-ECHO is on.
+def create_matrix(size: int, fill: int = 0) -> list[list[int]]:
+    return [[0 for _ in range(size)] for _ in range(size)]
+def create_bool_matrix(size: int, fill: bool = False) -> list[list[bool]]:
+    if create_matrix(size):
+        return True
+    return False
+def in_bounds(size: int, x: int, y: int) -> bool:
+    pass
+def count_remaining_ships(ships: list[list[int]], shots: list[list[bool]]) -> int:
+    pass
+def render_public(ships: list[list[int]], shots: list[list[bool]]) -> str:
+    pass
+def render_reveal(ships: list[list[int]], shots: list[list[bool]]) -> str:
+    pass
+
+
+
